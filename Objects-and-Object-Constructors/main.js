@@ -9,26 +9,34 @@ const $form = document.querySelector("form").addEventListener("submit", (e) => {
   addBookToLibrary();
 });
 
-function Book(name, author, pages, status) {
-  this.name = name;
+class Book {
+  constructor(title, author, pages, status) {
+  this.title = title;
   this.author = author;
   this.pages = pages;
-  this.readOrNot= status;
-  this.read = function(){
-    return `${this.name} by ${this.author}, with ${this.pages} pages, ${status}.`
+  this.status = status;}
   }
-}
 
 function addBookToLibrary() {
-  if ($name.value.length === 0 || $author.value.length === 0) {
+  if ($title.value.length === 0 || $author.value.length === 0) {
     alert("Please, fill all the fields");
     return;
   }
-  const newBook = new Book($name.value, $author.value, $status.value);
+  const newBook = new Book($title.value, $author.value, $pages.value, $status.value);
 
   myLibrary.push(newBook);
+}d
+
+function changeStatus(book) {
+  if (library[book].status === "read") {
+    library[book].status = "not read";
+  } else library[book].status = "read";
 }
 
-let favBook = new Book("The Hobbit", "J.R.R. Tolkien", 295, "not read yet");
+function deleteBook(currentBook) {
+  library.splice(currentBook, currentBook + 1);
+}
+
+let favBook = new Book("The Hobbit", "J.R.R. Tolkien", "259", "not read");
 
 console.log(favBook.read());
