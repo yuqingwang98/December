@@ -1,3 +1,0 @@
-# December
-
-Learning something new...
