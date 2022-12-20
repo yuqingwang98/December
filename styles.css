@@ -19,8 +19,8 @@ section {
   margin-left: 20px;
 }
 
-.menu {
+ul.menu {
   font-family: monospace;
   font-size: 30px;
-  padding-left: 30px;
+  padding-left: 100px;
 }
