@@ -8,8 +8,15 @@ h1{
   font-size: 3rem;
 }
 
-img {
+/* img {
   max-width: 50%;
   height: auto;
   align-items: center;
+} */
+
+.block {
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  width: min(70%, 500px);
 }
