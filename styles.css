@@ -18,5 +18,13 @@ h1{
   display: block;
   margin: auto;
   border-radius: 25px;
-  width: min(70%, 500px);
+  width: max(60%);
+}
+
+section {
+  padding-left: 20;
+}
+
+.menu {
+  font-size: 20px;
 }
