@@ -8,6 +8,15 @@ h1{
   font-size: 3rem;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: grey;
+  text-align: center;
+}
+
 .block {
   display: block;
   margin: auto;
@@ -28,13 +37,4 @@ ul#menu {
 
 li:not(:last-child) {
     margin-bottom: 10px;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: grey;
-  text-align: center;
 }
