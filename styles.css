@@ -29,3 +29,12 @@ ul#menu {
 li:not(:last-child) {
     margin-bottom: 10px;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: grey;
+  text-align: center;
+}
