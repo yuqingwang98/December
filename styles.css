@@ -19,8 +19,13 @@ section {
   margin-left: 20px;
 }
 
-ul.menu {
+ul#menu {
   font-family: monospace;
   font-size: 30px;
   padding-left: 100px;
+  padding-top: 20px;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
 }
